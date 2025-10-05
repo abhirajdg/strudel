@@ -1,0 +1,8 @@
+//@title First Steps
+//@by Bong Lebowski
+
+$: note("a1 a1 <a#1 a#1 a#1 ~> a1".fast(4)).s("pulse").tremsync(4).tremolodepth("<1 2 .7>").room(0.5)
+
+$: sound("sbd*4,hh*8")
+
+$: n("<0 1 2 3 5 1 2 5>*8?").scale("a4:minor").s("pulse").pan(sine.range(0,1)).room(0.23).penv("<0 0.5 0 0.7>*2")
