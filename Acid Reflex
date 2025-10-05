@@ -1,0 +1,12 @@
+//@title Acid Reflex
+//@by Bong Lebowski
+
+setCps(140/60/4)
+
+$: s("sbd!4").duck(2)
+
+$: n(irand(5).sub(7).seg(16)).scale("e:minor").s("sawtooth").lpf(sine.range(200,800).slow(2)).orbit(1)
+
+$: n(irand(14).seg(16)).scale("e:minor").s("pulse").orbit(2)
+
+$: s("pulse").orbit(2).seg(16).dec(.1).fm(time).fmh(time)
