@@ -1,0 +1,5 @@
+$: n("<2 4 4 0>*16".add("<1>")).s("sawtooth").room(0.3).pan(sine)._pianoroll()
+
+$: n("<0 4 4 0>*16".add("<0 3 2>")).detune(rand).pan(rand).trans(-24).phaser(slider(0.404)).phaserdepth(0.4)
+
+$: s("bd:2!4").gain(0.6).duck("3:4:5:6")
